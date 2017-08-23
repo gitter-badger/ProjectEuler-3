@@ -4,10 +4,13 @@ using System.Text;
 
 namespace ProjectEuler
 {
-    public static class Set1
+	/// <summary>
+	/// Solves the problems 1-10 of Project Euler ( https://projecteuler.net/archives )
+	/// </summary>
+	public static class Set1
     {
         /// <summary>
-        /// Solves the problems 1-10 of Project Euler ( https://projecteuler.net/archives )
+        /// Finds the sum of all multiples of a or b below c
         /// </summary>
         /// <param name="a"></param>
         /// <param name="b"></param>

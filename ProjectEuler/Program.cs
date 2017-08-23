@@ -20,6 +20,11 @@ namespace ProjectEuler
             Console.ReadKey();
         }
 
+		/// <summary>
+		/// Wrapper for sanitized input from console
+		/// </summary>
+		/// <param name="args">Message to print to the user</param>
+		/// <returns>Input value</returns>
         static double ReadNumber(string args)
         {
             Console.WriteLine(args);
