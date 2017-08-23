@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 
+using static ProjectEuler.MathHelper;
+
 namespace ProjectEuler
 {
 	/// <summary>
@@ -18,16 +20,7 @@ namespace ProjectEuler
         /// <returns></returns>
         public static int Problem1(int a, int b, int c)
         {
-            int sum = 0;
-            for (int i = 1; i < c; i++)
-            {
-                if (i % 3 == 0 || i % 5 == 0)
-                {
-                    sum += i;
-                }
-
-            }
-            return sum;
-        }
+			return SumDivisibleBy(a, c) + SumDivisibleBy(b, c) - SumDivisibleBy(a * b, c);
+		}
     }
 }
