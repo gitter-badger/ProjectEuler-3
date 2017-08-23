@@ -9,15 +9,15 @@ namespace ProjectEuler
             RunSet1();
         }
 
-        static void RunSet1();
+        static void RunSet1()
         {
-            Console.WriteLine(string "Find the sum of all the multiples of x or y below z. \nAll must be integers.");
-            int x = ReadNumber(string "Please enter x:");
-            int y = ReadNumber(string "Please enter y:");
-            int z = ReadNumber(string "Please enter z:");
+            Console.WriteLine("Find the sum of all the multiples of x or y below z. \nAll must be integers.");
+            int x = (int) ReadNumber("Please enter x:");
+            int y = (int) ReadNumber("Please enter y:");
+            int z = (int) ReadNumber("Please enter z:");
             Console.WriteLine("Answer: {0}", Set1.Problem1(x,y,z));
         }
-    
+
         static double ReadNumber(string args)
         {
             Console.WriteLine(args);
