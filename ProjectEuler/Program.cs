@@ -15,7 +15,8 @@ namespace ProjectEuler
             int x = (int) ReadNumber("Please enter x:");
             int y = (int) ReadNumber("Please enter y:");
             int z = (int) ReadNumber("Please enter z:");
-            Console.WriteLine("Answer: {0}", Set1.Problem1(x,y,z));
+            Set1 InstanceSet1 = new Set1();
+            Console.WriteLine("Answer: {0}", InstanceSet1.Problem1(x,y,z));
         }
 
         static double ReadNumber(string args)
@@ -24,7 +25,7 @@ namespace ProjectEuler
             int number;
             while (!int.TryParse(Console.ReadLine(), out number))
             {
-                Console.WriteLine("Invalid number format");
+                Console.WriteLine("Invalid number format, try again.");
             }
             return number;
 
