@@ -15,8 +15,9 @@ namespace ProjectEuler
             int x = (int) ReadNumber("Please enter x:");
             int y = (int) ReadNumber("Please enter y:");
             int z = (int) ReadNumber("Please enter z:");
-            Set1 InstanceSet1 = new Set1();
-            Console.WriteLine("Answer: {0}", InstanceSet1.Problem1(x,y,z));
+            Console.WriteLine("Answer: {0}", Set1.Problem1(x,y,z));
+            Console.WriteLine("Press any key to exit...");
+            Console.ReadKey();
         }
 
         static double ReadNumber(string args)

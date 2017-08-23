@@ -4,9 +4,16 @@ using System.Text;
 
 namespace ProjectEuler
 {
-    public class Set1
+    public static class Set1
     {
-        public int Problem1(int a, int b, int c)
+        /// <summary>
+        /// Solves the problems 1-10 of Project Euler ( https://projecteuler.net/archives )
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <param name="c"></param>
+        /// <returns></returns>
+        public static int Problem1(int a, int b, int c)
         {
             int sum = 0;
             for (int i = 1; i < c; i++)
